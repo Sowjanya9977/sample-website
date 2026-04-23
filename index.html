@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Website</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+
+  <!-- Mailchimp Script -->
+  <script id="mcjs">
+    !function(c,h,i,m,p){
+      m=c.createElement(h),
+      p=c.getElementsByTagName(h)[0],
+      m.async=1,
+      m.src=i,
+      p.parentNode.insertBefore(m,p)
+    }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/756400814129c06ec704ed53d/fb939a930d62c65a65f8aa166.js");
+  </script>
+
 </head>
 <body>
 
@@ -42,11 +55,41 @@
     </div>
   </section>
 
+  <!-- ✅ CONTACT + MAILCHIMP FORM -->
   <section id="contact" class="section">
     <div class="container">
-      <h2>Contact</h2>
-      <p>Email: example@email.com</p>
-      <p>Phone: +1 123 456 7890</p>
+      <h2>Contact / Subscribe</h2>
+
+      <div id="mc_embed_signup">
+
+        <form action="https://gmail.us18.list-manage.com/subscribe/post?u=756400814129c06ec704ed53d&amp;id=5028f8a97d&amp;f_id=008aa9e6f0"
+              method="post"
+              target="_blank">
+
+          <h3>Subscribe / Survey Form</h3>
+
+          <label>Email *</label>
+          <input type="email" name="EMAIL" required>
+
+          <label>Full Name</label>
+          <input type="text" name="FNAME">
+
+          <label>Last Name</label>
+          <input type="text" name="LNAME">
+
+          <label>Phone *</label>
+          <input type="text" name="MMERGE3" required>
+
+          <label>Birthday *</label>
+          <input type="text" name="MMERGE4[month]" placeholder="MM" required>
+          <input type="text" name="MMERGE4[day]" placeholder="DD" required>
+
+          <button type="submit">Submit</button>
+
+        </form>
+
+      </div>
+
     </div>
   </section>
 
@@ -57,5 +100,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 </body>
 </html>
